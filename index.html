@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form To Email Using Javascript</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- <form onsubmit="sendEmail(); reset(); return false;"> -->
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <h3>Get In Touch</h3>
+        <input type="hidden" name="access_key" value="a7c039a5-5db5-4927-9312-87efa2f24426">
+        <input type="text" name="name" id="name" placeholder="Your Name" required />
+        <input type="email" name="email" id="email" placeholder="Email Id" required />
+        <input type="text" name="phone" id="phone" placeholder="Phone no." required />
+        <textarea
+          name="message"
+        
+          id="message"
+          rows="4"
+          placeholder="How can we help you?"
+        ></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <!-- 1. Include the script: -->
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+    <!-- 2. Send an email using: -->
+    <!-- <script>
+      Email.send({   
+        // SecureToken: " aed76437-6793-4822-9310-e88b8c2d683e",            
+        Host: "smtp.elasticemail.com", // for learning and simplicity purpose we will use G-mail smtp server
+        Username: "kumar9089rajan@gmail.com",
+        Password: "Kumar@1234",
+        To: "kumar9089rajan@gmail.com",
+        From: document.getElementById("email").value,
+        Subject: "New Contact Form Enquiry",
+        // Body: "And this is the body",
+        Body: "Name: " + document.getElementById("name").value
+            + "<br> Email: " + document.getElementById("email").value
+            + "<br> Phone no: " + document.getElementById("phone").value
+            + "<br> Message: " + document.getElementById("message").value
+      }).then((message) => alert(message));
+    </script> -->
+  </body>
+</html>
+
+
+<!-- aed76437-6793-4822-9310-e88b8c2d683e -->
